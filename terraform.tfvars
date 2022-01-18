@@ -25,7 +25,7 @@ managed_node_group_instance_types = ["t3.large"]
 managed_node_group_capacity_type = "ON_DEMAND"
 
 # Access EKS from private networks
-cluster_endpoint_private_access = false
+cluster_endpoint_private_access = true
 
 # Access EKS from public networks
 cluster_endpoint_public_access = true
