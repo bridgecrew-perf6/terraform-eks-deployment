@@ -3,11 +3,6 @@ variable "vpc_id" {
   description = "VPC ID"
 }
 
-variable "security_group_id" {
-  type = string
-  description = "Security Group ID"
-}
-
 variable "cluster_name" {
   type = string
   description = "EKS Cluster Name"
@@ -46,11 +41,6 @@ variable "managed_node_group_instance_types" {
 variable "managed_node_group_capacity_type" {
   type = string
   description = "Managed Node Group Capacity Type"
-}
-
-variable "eks_iam" {
-  type = list(string)
-  description = "EKS ARN List"
 }
 
 variable "cluster_endpoint_private_access" {
