@@ -1,0 +1,13 @@
+vpc_id = ""
+iac_environment = "dev"
+vpc_cidr = "10.1.10.0/24"
+eip_name = "cl-1"
+
+
+# Example. Delete at the end
+
+image_id = "ami-abc123"
+availability_zone_names = [
+  "us-east-1a",
+  "us-west-1c",
+]
