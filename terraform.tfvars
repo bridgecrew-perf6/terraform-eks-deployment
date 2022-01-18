@@ -14,8 +14,6 @@ public_subnets  = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
 
 eks_name = "eks-1"
 
-eks_iam = ["arn1","arn2"]
-
 managed_node_group_min_size = 1
 
 managed_node_group_max_size = 2
