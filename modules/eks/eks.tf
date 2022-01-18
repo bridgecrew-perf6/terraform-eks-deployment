@@ -31,7 +31,7 @@ module "eks" {
   }  
   
   eks_managed_node_groups = {
-    green = {
+    default = {
       min_size = var.managed_node_group_min_size
       max_size = var.managed_node_group_max_size
       desired_size = var.managed_node_group_desired_size
