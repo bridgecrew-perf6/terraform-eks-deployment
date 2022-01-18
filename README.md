@@ -14,12 +14,6 @@ Main Features:
 - EKS
   - EKS Cluster
   - Managed Node Groups
-- Optional Features
-  - IAM Roles
-
-Warning
-
-
 
 # Getting Started
 
@@ -41,8 +35,6 @@ Warning
 
     eks_name = "eks-1"
 
-    eks_iam = ["arn1","arn2"]
-
     managed_node_group_min_size = 1
 
     managed_node_group_max_size = 2
@@ -52,10 +44,6 @@ Warning
     managed_node_group_instance_types = ["t3.large"]
 
     managed_node_group_capacity_type = "ON_DEMAND"
-
-    # Optional
-
-    arn_policies = ["",""]
 
 ## Deployment Example
 
