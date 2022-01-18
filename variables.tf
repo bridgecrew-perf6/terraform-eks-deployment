@@ -57,11 +57,6 @@ variable "managed_node_group_capacity_type" {
   description = "Managed Node Group Capacity Type"
 }
 
-variable "eks_iam" {
-  type = list(string)
-  description = "EKS ARN List"
-}
-
 variable "cluster_endpoint_private_access" {
   type = bool
   description = "Cluster Endpoint Private Access"
