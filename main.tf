@@ -18,10 +18,8 @@ provider "kubernetes" {
 }
 
 locals {
-  network_vpc_id = var.vpc_id
   private_subnets = module.create_network_requirements.private_subnets
   public_subnets = module.create_network_requirements.public_subnets
-  security_group = module.create_network_requirements.security_group
 }
 
 #------------------------------
@@ -72,13 +70,9 @@ module "create_eks_cluster" {
   
   cluster_name = var.eks_name
   
-  security_group_id = local.security_group.id
-  
   eks_subnets = "${concat(local.public_subnets,local.private_subnets)}"
   
   aws_identity_id = data.aws_caller_identity.current.account_id
-  
-  eks_iam = var.eks_iam
   
   managed_node_group_min_size = var.managed_node_group_min_size
   
