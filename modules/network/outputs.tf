@@ -10,9 +10,3 @@ output "public_subnets" {
   
   description = "Public Subnets"
 }
-output "security_group" {
-  
-  value = aws_security_group.this
-  
-  description = "Security Group"
-}
